@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(startup)
+include_directories(../../includes)
+link_directories(../../libraries/${ARCH_NAME})
+aux_source_directory(. SRC)
+add_executable(startup ${SRC})

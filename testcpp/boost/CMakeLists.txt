@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.10)
+project(startup)
+include_directories(../../includes)
+link_directories(../../libraries/${ARCH_NAME})
+
+set(BOOST_INCLUDEDIR ../../includes)
+set(BOOST_LIBRARYDIR ../../libraries/${ARCH_NAME})
+include_directories(${BOOST_INCLUDEDIR})
+link_directories(${BOOST_LIBRARYDIR})
+set(Boost_USE_STATIC_LIBS TRUE)
+find_package(Boost COMPONENTS regex REQUIRED)
+
+aux_source_directory(. SRC)
+add_executable(startup ${SRC})
+target_link_libraries(startup ${Boost_LIBRARIES})
