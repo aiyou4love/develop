@@ -1,0 +1,11 @@
+set CUR_DRIVE=%~d0
+set CUR_DIR=%~dp0
+set VC_ENV="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+set VC_CMAKE="Visual Studio 15 2017 Win64"
+set BOOST_NAME=boost_1_71_0
+set BOOST_ARC=boost_1_71_0
+set BOOST_DIR=boost_1_71_0
+set PRJ_CFG=Debug
+set LINUX_IP=192.168.0.107
+set LINUX_NAME=zyh
+set LINUX_PWD=zyouhua99
